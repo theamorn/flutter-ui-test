@@ -1,0 +1,3 @@
+Tested SUCCEED: login_test.dart - 2021-06-27-19:43 : 39 seconds
+Tested SUCCEED: forgetpassword_test.dart - 2021-06-27-19:44 : 51 seconds
+Tested SUCCEED: register_test.dart - 2021-06-27-19:45 : 46 seconds

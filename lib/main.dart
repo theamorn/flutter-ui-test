@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
+import 'package:uitest/login_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -59,6 +61,29 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  void _onLoading() {
+    showDialog(
+      context: context,
+      barrierDismissible: false,
+      builder: (BuildContext context) {
+        return Dialog(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              CircularProgressIndicator(),
+              Text("Loading"),
+            ],
+          ),
+        );
+      },
+    );
+    new Future.delayed(new Duration(seconds: 3), () {
+      Navigator.pop(context);
+      Navigator.push(context, MaterialPageRoute(builder: (_) => LoginDemo()));
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
@@ -93,17 +118,29 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            Lottie.network(
+                'https://raw.githubusercontent.com/xvrh/lottie-flutter/master/example/assets/Mobilo/A.json'),
             Text(
               'You have pushed the button this many times:',
             ),
             Text(
               '$_counter',
+              key: Key("CounterText"),
               style: Theme.of(context).textTheme.headline4,
+            ),
+            TextButton(
+              key: Key("LoginButton"),
+              onPressed: () => _onLoading(),
+              child: Text(
+                'Go to Login',
+                style: TextStyle(color: Colors.red, fontSize: 25),
+              ),
             ),
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
+        key: Key("IncrementButton"),
         onPressed: _incrementCounter,
         tooltip: 'Increment',
         child: Icon(Icons.add),
