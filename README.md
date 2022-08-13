@@ -1,16 +1,21 @@
-# uitest
+<div align="center">
+<h3 align="center">Flutter Automated UI testing with Flutter Integration test</h3>
+</div>
 
-A new Flutter project.
+## About The Project
+
+This project is a sample project that use Integration testing to show how to regression testing your app with UI automated.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Clone this project and use this article for reference [Medium](https://medium.com/kbtg-life/flutter-demo-by-kbtg-flutter-integration-test-for-dummy-9b600434c08b)
 
-A few resources to get you started if this is your first Flutter project:
+## Usage
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+VDO showing how the Flutter Integration test works
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+[![VDO from sample code](https://img.youtube.com/vi/Pv8ybjURzVE/0.jpg)](https://www.youtube.com/watch?v=Pv8ybjURzVE)
+
+## Contact
+
+Amorn Apichattanakul - [@EinzelnSync](https://twitter.com/EinzelnSync) - benamorn@gmail.com - [LinkedIn](https://www.linkedin.com/in/amorna/)
